@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.container {
+    background-color: #3a3f47;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+input[type="number"] {
+    padding: 12px 15px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    font-size: 1.1em;
+    width: 150px;
+    text-align: center;
+    background-color: #3a3f47;
+    color: aliceblue;
+}
+
+input[type="number"] {
+
+}
+
+input[type="number"]:focus {
+    border-color: aqua; /* Borda mais clara ao focar */
+}
+
+button {
+    background-color: aqua;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: backgroud-color 0.3s ease; /* Animação suave ao passar o mouse */
+}
+button:hover {
+    background-color: aqua;
+}
+
+.resultado-area p {
+    font-size: 1,0em;
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.mensagem {
+    font-weight: bold;
+    color: azure;
+}
+
+.palpites-anteriores {
+    font-size: 0.oem;
+    color: #bbb;
+}
+ 
+.dica {
+    font-style: italic;
+    color: burlywood;
+}
+
+.hidden {
+    display: none; /* Classe para esconder elementos*/
+}
+
+
+@keyframes flashGreen {
+    0% {background-color: transparent;}
+    50% {background-color: rgba(76, 157, 80,0,3);}
+    100% {background-color: transparent;}
+}
+@keyframes flashRed {
+    0% {background-color: transparent;}
+    50% {background-color: rgba(244, 67, 54, 0.3);}
+}
+.flash-green {
+    animation: flashGreen 0.5 ease-in-out;
+}
+.flash-red {
+    animation: flashRed 0.5 ease-in-out;
+}
